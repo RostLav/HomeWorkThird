@@ -9,7 +9,5 @@ for (int i = numberA-1; i>=1; i--)
         answer = i;
         break;
     }
-    
 }
-
 Console.WriteLine(answer);
