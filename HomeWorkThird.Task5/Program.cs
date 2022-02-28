@@ -5,8 +5,14 @@ int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 int answer = 0;
-if (numberA < numberB)
+int tmp = 0;
+
+if (numberB < numberA)
 {
+    tmp = numberA;
+    numberA = numberB;
+    numberB = tmp;
+}
     for (int i = numberA; i <= numberB; i++)
     {
         if (i % 7 == 0)
@@ -14,17 +20,6 @@ if (numberA < numberB)
             answer += i;
         }
     }
-}
-else
-{
-    for (int j = numberB; j <= numberA; j++)
-    {
-        if(j % 7 == 0)
-        {
-            answer += j;
-        }
-    }
-}
 
 Console.WriteLine(answer);
 
