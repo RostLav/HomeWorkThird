@@ -2,16 +2,16 @@
 Console.WriteLine("Введите число А:");
 double numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число В:");
-double numberB = Convert.ToInt32(Console.ReadLine());
+int numberB = Convert.ToInt32(Console.ReadLine());
 double answer = 1;
-for(int i = 0; (i<numberB&&numberB>0)||(i>numberB&&numberB<0);)
-    if(numberB<0){
-        answer /= numberA;
-        i--;
-    }
-    else
-    {
-        answer *= numberA;
-        i++;
-    }
+
+if (numberB < 0)
+{
+    numberA = 1 / numberA;
+    numberB = -numberB;
+}
+for(int i =0; i<numberB; i++)
+{
+    answer *= numberA;
+}
 Console.Write(answer);
