@@ -1,8 +1,8 @@
 ﻿//Пользователь вводит 2 числа (A и B). Вывести сумму всех чисел из диапазона от A до B, которые делятся без остатка на 7. (Учтите, что при вводе B может оказаться меньше A).
 
-Console.WriteLine("Введите число А: ");
+Console.WriteLine("Введите диапазон числа А: ");
 int numberA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число B: ");
+Console.WriteLine("Введите диапазон числа B: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 int answer = 0;
 int tmp = 0;
@@ -21,5 +21,5 @@ if (numberB < numberA)
         }
     }
 
-Console.WriteLine(answer);
+Console.WriteLine($"Сумма всех чисел, которые делятся на 7 в веденном диапазоне: {answer}");
 

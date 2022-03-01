@@ -14,4 +14,4 @@ for(int i =0; i<numberB; i++)
 {
     answer *= numberA;
 }
-Console.Write(answer);
+Console.Write($"А в степени В = {answer}");

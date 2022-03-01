@@ -10,4 +10,4 @@ for (int i = numberA-1; i>=1; i--)
         break;
     }
 }
-Console.WriteLine(answer);
+Console.WriteLine($"Наибольший делитиль введенного числа: {answer}");

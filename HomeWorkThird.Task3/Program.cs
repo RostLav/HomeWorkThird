@@ -10,4 +10,4 @@ for (int i = 1; i < numberA; i++)
         Console.WriteLine(i*i);
     }
 }
-Console.WriteLine(answer);
+Console.WriteLine($"Количество положительных чисел, квадрат которрых меньше А: {answer}");
